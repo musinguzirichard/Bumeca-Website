@@ -1,129 +1,186 @@
-<!DOCTYPE html><html lang="en">
+Project Structure
+
+We'll use the following structure:
+
+/ (root)
+│
+├── index.html              # Homepage
+├── login.html              # Login Page
+├── dashboard.html          # Member Dashboard
+├── register.html           # New Member Registration
+├── subscriptions.html      # Finance/Subscription Page
+└── script.js               # Handles login & access control
+
+
+---
+
+✅ index.html (Homepage)
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BUMECA - Uganda</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #005f73;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
-    }
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      background-color: #0a9396;
-      padding: 1rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
-    }
-    section {
-      padding: 2rem;
-    }
-    .hero {
-      background-color: #e0fbfc;
-      padding: 2rem;
-      text-align: center;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-    .card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    footer {
-      background: #001219;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    .footer-links {
-      margin-top: 1rem;
-      font-size: 0.9rem;
-    }
-  </style>
+  <title>BUHIO Medical Coders Association</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>  <header>
-    <h1>BUMECA - Uganda</h1>
-    <p>Bonded Uganda Health Information Officers & Medical Coders Association</p>
-  </header>  <nav>
-    <a href="#">Home</a>
-    <a href="#about">About</a>
-    <a href="#news">News & Events</a>
-    <a href="#services">Data & E-Services</a>
-    <a href="#opportunities">Opportunities</a>
-    <a href="#contact">Contact Us</a>
-  </nav>  <section class="hero">
-    <h2>Health Services & Programs</h2>
-    <p>Provides essential health services, covering maternal care, immunization, HIV/AIDS, and disease prevention for better public health.</p>
-  </section>  <section class="grid">
-    <div class="card">
-      <h3>Health Alerts & Updates</h3>
-      <p>Delivers real-time updates on outbreaks, vaccination drives, health policies, and urgent advisories for disease prevention.</p>
-    </div>
-    <div class="card">
-      <h3>Resources & Publications</h3>
-      <p>A hub for reports, health guidelines, research data, and statistics to inform healthcare professionals and the general public.</p>
-    </div>
-    <div class="card">
-      <h3>Opportunities & Careers</h3>
-      <p>Find job openings, tenders, internships, and training programs in the health sector. Explore professional growth opportunities.</p>
-    </div>
-  </section>  <section id="about">
-    <h2>About BUMECA</h2>
-    <p>BUMECA is a national body uniting health records and informatics professionals in Uganda. We ensure stewardship and advancement in health information for better health outcomes.</p>
-  </section>  <section id="news">
-    <h2>Latest News & Updates</h2>
-    <ul>
-      <li><strong>17 July 2025:</strong> BUMECA launches data mentorship programs in Central and Western Uganda.</li>
-      <li><strong>16 July 2025:</strong> Collaboration with MoH to improve health facility records management nationwide.</li>
-      <li><strong>14 July 2025:</strong> Training on ICD coding for regional hospitals kicks off in Mbarara.</li>
-    </ul>
-  </section>  <section id="services">
-    <h2>Our Mission</h2>
-    <p>To support medical records professionals to commit to result-oriented service delivery through timely and quality health data collection, analysis, and dissemination.</p>
-  </section>  <section id="opportunities">
-    <h2>Opportunities & Engagements</h2>
-    <ul>
-      <li>Internship placements for diploma students in health records and information management.</li>
-      <li>Ongoing HMIS training and mentorship sessions in all regions.</li>
-      <li>Open call for volunteers during national health data campaigns.</li>
-    </ul>
-  </section>  <section id="contact">
-    <h2>Get In Touch</h2>
-    <p><strong>Address:</strong> P.O. Box 71000 Clock Tower, Kampala, Uganda</p>
-    <p><strong>Email:</strong> info.buhiomedicalcoders@gmail.com</p>
-    <p><strong>Phone:</strong> +256 782 510 494 / +256 783 368 876</p>
-    <p><strong>Facebook:</strong> BUHIO MEDICAL CODERS ASSOCIATION</p>
-    <p><strong>Twitter:</strong> @Buhiomedical</p>
-  </section>  <footer>
-    <p>&copy; 2025 BUMECA - Uganda. All Rights Reserved.</p>
-    <div class="footer-links">
-      <p>Other Links: Ministry of Health | Ministry of Finance | Uganda Media Centre | NIRA</p>
-    </div>
-  </footer></body>
+<body>
+  <header>
+    <h1>BUHIO MEDICAL CODERS ASSOCIATION</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Welcome to BUHIO</h2>
+    <p>We promote the acquisition of timely and quality health information for evidence-based decision making.</p>
+  </main>
+
+  <footer>
+    <p>© 2025 BUHIO MEDICAL CODERS</p>
+  </footer>
+</body>
 </html>
+
+
+---
+
+🔐 login.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+</head>
+<body>
+  <h2>Login</h2>
+  <form onsubmit="return loginUser()">
+    <label>Username: <input type="text" id="username" required></label><br>
+    <label>Password: <input type="password" id="password" required></label><br>
+    <button type="submit">Login</button>
+  </form>
+  <p id="error" style="color:red;"></p>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+---
+
+🧠 dashboard.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+</head>
+<body onload="checkAccess(['admin', 'finance', 'member'])">
+  <h2>Dashboard</h2>
+  <p>Welcome <span id="user"></span>!</p>
+  <ul>
+    <li><a href="register.html">Register Member</a></li>
+    <li><a href="subscriptions.html">Finance Dashboard</a></li>
+    <li><button onclick="logout()">Logout</button></li>
+  </ul>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+---
+
+📋 register.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register New Member</title>
+</head>
+<body onload="checkAccess(['admin'])">
+  <h2>Register Member</h2>
+  <form>
+    <input placeholder="Full Name">
+    <input placeholder="Email">
+    <input placeholder="Phone Number">
+    <button type="submit">Submit</button>
+  </form>
+  <a href="dashboard.html">Back</a>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+---
+
+💰 subscriptions.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Finance Panel</title>
+</head>
+<body onload="checkAccess(['finance'])">
+  <h2>Subscription and Contributions</h2>
+  <form>
+    <input placeholder="Member ID">
+    <input placeholder="Amount">
+    <select>
+      <option>Subscription</option>
+      <option>Donation</option>
+    </select>
+    <button type="submit">Record</button>
+  </form>
+  <a href="dashboard.html">Back</a>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+---
+
+🧠 script.js (Login Logic + Access Control)
+
+const users = [
+  { username: 'admin', password: 'admin123', role: 'admin' },
+  { username: 'finance', password: 'finance123', role: 'finance' },
+  { username: 'member', password: 'member123', role: 'member' }
+];
+
+function loginUser() {
+  const u = document.getElementById('username').value;
+  const p = document.getElementById('password').value;
+  const user = users.find(x => x.username === u && x.password === p);
+
+  if (user) {
+    localStorage.setItem('loggedInUser', JSON.stringify(user));
+    window.location.href = 'dashboard.html';
+  } else {
+    document.getElementById('error').innerText = 'Invalid login!';
+  }
+  return false;
+}
+
+function checkAccess(allowedRoles) {
+  const user = JSON.parse(localStorage.getItem('loggedInUser'));
+  if (!user || !allowedRoles.includes(user.role)) {
+    alert('Access Denied');
+    window.location.href = 'login.html';
+  } else {
+    const nameSpan = document.getElementById('user');
+    if (nameSpan) nameSpan.innerText = user.username;
+  }
+}
+
+function logout() {
+  localStorage.removeItem('loggedInUser');
+  window.location.href = 'login.html';
+}
+
+
+---
